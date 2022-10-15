@@ -1,0 +1,605 @@
+.promo
+	// height: $height_966-525
+	height: 966px
+	background-image: url(../img/HEADER-PROMO/backgr_header.jpg)
+	@include image_features
+	&_header
+		min-height: 136px
+		background: $promo_header_background_color
+		top: 0
+		.row
+			min-height: 136px
+			display: flex
+			align-items: center
+		&_hamburger-box-menu
+			display: none
+			&_menu
+				&_list
+					margin: 0
+					padding: 0
+					display: flex
+					justify-content: space-evenly
+					list-style-type: none
+					&_item
+						&_link
+							color: $white_color
+							// font-size: $font-size_22-15
+							font-size: 22px
+							text-decoration: none
+							font-weight: 600
+							&:hover
+								color: $blue_color
+								text-decoration: underline	
+		&_logo
+			display: flex
+			align-items: center
+			&_link
+				&_img        
+					// height: $height_52-22	
+					height: 52px				
+		&_menu
+			padding: 0
+			margin-top: 12px 
+			&_list
+				margin: 0
+				padding: 0
+				display: flex
+				justify-content: space-evenly
+				list-style-type: none
+				&_item
+					&_link
+						color: $white_color
+						// font-size: $font-size_22-15
+						font-size: 22px
+						text-decoration: none
+						font-weight: 600
+						&:hover
+							color: $blue_color
+							text-decoration: underline
+		&_search-box
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			width: 16%
+			height: 30px
+			margin-top: 11px 
+			padding: 0 3px 0 3px
+			background: none
+			border-radius: 6px
+			border: 2px solid $search-box_color
+			color: $white_color
+			opacity: 0.9
+			&:hover
+				opacity: 1.0
+				color: $white_color
+			&_text
+				width: 100%       
+				background: none
+				border: none
+				// font-size: $font-size_22-15
+				font-size: 22px
+				color: $white_color
+				opacity: 0.9
+				outline: none
+				&:hover
+					color: $white_color
+					opacity: 1          
+	&_call-to-action
+		display: flex		 
+		justify-content: center		
+		.row
+			// height: $height_830-312
+			height: 830px
+			display: flex			
+			justify-content: center	
+		&_box
+			display: flex
+			flex-direction: column
+			justify-content: center			
+			align-items: center		
+			&_h1
+				color: $white_color
+				// font-size: $font-size_72-32
+				font-size: 72px
+				font-weight: bold
+				margin-bottom: 0px
+				text-align: center
+				padding: 0 30px 0 30px
+				span
+					color: $blue_color
+			&_p
+				padding: 0 60px 0 60px
+				text-align: center
+				margin-top: 11px
+				color: $white_color
+				// font-size: $font-size_32-15_1
+				font-size: 32px
+			&_button
+				display: flex
+				justify-content: center
+				align-items: center
+				// height: $height_200-106
+				height: 200px
+				// width: $width_215-146
+				width: 215px
+				&_learn_more
+					// height: $height_60-44
+					height: 60px
+					// width: $width_215-146
+					width: 215px
+					display: flex
+					justify-content: center	
+					align-items: center		
+					background: $blue_color
+					color: $white_color
+					border-radius: 55px
+					// font-size: $font-size_18-13
+					font-size: 18px
+					font-weight: bold
+					text-decoration: none
+					border: 1px solid
+					&:hover
+						background: $white_color
+						color: $blue_color
+
+
+.our_services
+	height: 100%
+	background-image: url(../img/OUR-SERVICES/BackGr_Srv_2000.png)
+	@include image_features
+	padding-bottom: 145px
+	&_h2
+		display: flex
+		justify-content: center
+		align-items: center
+		// height: $height_200-90
+		height: 200px
+		border-bottom: 3px solid $our_services_h2_border-bottom_color
+		&_text
+			color: $h_color
+			// font-size: $font-size_48-23
+			font-size: 48px
+			font-weight: 600
+			text-align: center
+			margin: 0
+	.row
+		min-height: 45px
+	&_offset_block
+		// height: $height_80-45
+		height: 80px
+	&_box
+		&_img
+			display: flex
+			align-items: flex-end
+			// height: $height_80-45
+			height: 80px
+			&_rd,
+			&_lock,
+			&_tv,
+			&_lamp
+				// height: $height_80-45
+				height: 80px
+		&_text
+			min-height: 110px
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			&_h3
+				color: $h_color
+				// font-size: $font-size_28-21
+				font-size: 28px
+				margin-bottom: 0
+		&_text_block
+			display: flex
+			justify-content: flex-start			
+			&_p
+				color: $p_color
+				// font-size: $font-size_16-11_1
+				font-size: 16px
+				// line-height: $line-height_38-20
+				line-height: 38px
+				max-width: 520px
+				font-weight: bold
+				margin-bottom: 0
+	.button_blue_center
+		display: flex
+		flex-direction: row 
+		justify-content: center
+		align-items: center				
+	&_box_button
+		// height: $height_250-132
+		height: 250px
+		// width: $width_215-146	
+		width: 215px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0
+		&_blue
+			@include button_blue_center
+	.row	
+	&_gray_text
+		display: flex
+		align-items: center
+		&_box
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			&_h3
+				color: $h_color
+				// font-size: $font-size_36-18
+				font-size: 36px
+				margin: 0
+				font-weight: 600
+			&_p
+				color: $p_color
+				// font-size: $font-size_16-11_1
+				font-size: 16px
+				font-weight: bold
+				margin: 0				
+				// line-height: $line-height_38-20
+				line-height: 38px
+			&_button_blue
+				@include button_blue_left
+	&_mac_laptop
+		display: flex
+		justify-content: flex-start
+		&_img
+			width: 100%
+	.row	
+	&_offset_block
+		// height: $height_200-90	
+		height: 200px			
+	&_mac_ipad
+		display: flex
+		justify-content: flex-start
+		&_img
+			width: 80%
+	&_white_text
+		display: flex
+		align-items: center
+		&_box
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			&_h3
+				color: $white_color
+				// font-size: $font-size_36-18
+				font-size: 36px
+				margin: 0
+				font-weight: 600
+			&_p
+				color: $white_color
+				// font-size: $font-size_16-11_1
+				font-size: 16px
+				font-weight: bold
+				margin: 0
+				// line-height: $line-height_38-20
+				line-height: 38px
+			&_button_white
+				@include button_white_left
+
+
+.strategy
+	.row
+		display: flex
+	&_img
+		padding: 0
+		background-image: url(../img/STRATEGY/man_desk.png)
+		@include image_features
+		// height: $height_642-330
+		height: 642px
+	&_text
+		display: flex
+		justify-content: center
+		padding: 0
+		// height: $height_642-330
+		height: 642px
+		&_box
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			height: 100%
+			width: 84%
+			&_h3
+				color: $h_color
+				// font-size: $font-size_46-27
+				font-size: 46px
+				font-weight: 600
+				margin: 0px
+			&_p
+				color: $p_color
+				// font-size: $font-size_24-12
+				font-size: 24px
+				// line-height: $line-height_48-18
+				line-height: 48px
+				font-weight: bold
+				margin: 0px
+			&_button_blue
+				@include button_blue_left
+					
+
+.category
+	display: flex
+	justify-content: center
+	align-items: center	
+	.row
+	&_box
+		// height: $height_434-224	
+		height: 434px
+		display: flex
+		justify-content: center
+		align-items: center	
+		padding: 0
+		&_link_1
+			@include category_box_link
+			background-image: url(../img/CATEGORY/Mac_book_black.png)
+			@include image_features
+			&:hover
+				background-image: url(../img/CATEGORY/Mac_book_blue.png)
+				color: $white_color
+		&_link_2
+			@include category_box_link
+			background-image: url(../img/CATEGORY/conference_hall_black.png)
+			@include image_features
+			&:hover
+				background-image: url(../img/CATEGORY/conference_hall_blue.png)
+				color: $white_color
+		&_link_3
+			@include category_box_link
+			background-image: url(../img/CATEGORY/Mc_keyboard_black.png)
+			@include image_features
+			&:hover
+				background-image: url(../img/CATEGORY/Mc_keyboard_blue.png)
+				color: $white_color
+		&_link_4
+			@include category_box_link
+			background-image: url(../img/CATEGORY/notepad_pen_black.png)
+			@include image_features
+			&:hover
+				background-image: url(../img/CATEGORY/notepad_pen_blue.png)
+				color: $white_color
+
+
+.team
+	// height: $height_810-670
+	height: 810px
+	&_h2_box
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		// height: $height_250-132
+		height: 250px
+		width: 50%
+		&_text
+			// font-size: $font-size_72-32
+			font-size: 72px
+			font-weight: bold
+			span
+				color: $blue_color
+				// font-size: $font-size_72-32
+				font-size: 72px
+				font-weight: bold
+	.row
+	&_offset_block
+		// height: $height_80-45	
+		height: 80px	
+	&_member
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		// height: $height_400-350	
+		height: 400px
+		&_img
+			display: flex
+			justify-content: center
+			&_John_Doe,
+			&_Paul_Kowalsy,
+			&_Emilly_Williams,
+			&_Patricia_Green
+				// height: $height_220-190
+				height: 220px
+		&_text
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly			
+			font-weight: 600
+			text-align: center
+			max-height: 70px	
+			&_h3
+				margin: 0
+				color: $h_color	
+				// font-size: $font-size_36-14_1
+				font-size: 36px
+		&_text_box
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			// font-size: $font-size_16-10_1
+			font-size: 16px
+			font-weight: 500
+			color: $p_color
+			text-align: center
+			max-height: 40px	
+			&_p
+				margin: 0
+		&_link
+			@include button_blue_center
+
+
+.contact_us
+	// height: $height_724-384
+	height: 724px
+	background-image: url(../img/CONTACT-US/backgr_contact.jpg)
+	@include image_features
+	display: flex
+	justify-content: center
+	align-items: center
+	.row
+		display: flex
+		justify-content: flex-start		
+	&_information
+		// height: $height_456-344
+		height: 456px
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		&_box
+			height: 85%
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			&_h2 
+				&_text
+					color: $white_color
+					font-weight: bold
+					// font-size: $font-size_72-32
+					font-size: 72px
+					margin-bottom: 0
+			&_text
+				height: 50%
+				display: flex
+				flex-direction: column
+				justify-content: space-evenly
+				&_address
+					color: $p_color
+					// font-size: $font-size_22-15_2
+					font-size: 22px
+					margin-bottom: 0
+				&_phone,
+				&_e-mail
+					color: $p_color
+					// font-size: $font-size_32-17_1
+					font-size: 32px
+					margin-bottom: 0
+				&_phone
+				span,
+				&_e-mail
+				span
+					color: $blue_color
+		&_box_list
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			width: 94%
+			padding: 0
+			margin-bottom: 0
+			&_item_twitter
+				@include contact_us_information_box_list_item
+				background: $twitter_background
+				&:hover
+					background: $contact_us_information_box_list_hover
+			&_item_facebook
+				@include contact_us_information_box_list_item
+				background: $facebook_background
+				&:hover
+					background: $contact_us_information_box_list_hover
+			&_item_pinterest
+				@include contact_us_information_box_list_item
+				background: $pinterest_background
+				&:hover
+					background: $contact_us_information_box_list_hover
+			&_item_google
+				@include contact_us_information_box_list_item
+				background: $google_background
+				&:hover
+					background: $contact_us_information_box_list_hover
+			&_item_e-mail
+				@include contact_us_information_box_list_item
+				background: $e-mail_background
+				&:hover
+					background: $contact_us_information_box_list_hover
+	&_offset_block
+		display: none						
+	&_web_form
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		// height: $height_456-344
+		height: 456px
+		&_box
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			height: 85%
+			&_text,
+			&_e-mail
+				width: 100%
+				// height: $height_60-44
+				height: 60px
+				background: none
+				border-radius: 6px
+				border: 1px solid $contact_us_web_form_color
+				color: $white_color
+				// font-size: $font-size_22-15
+				font-size: 22px
+				font-family: Montserrat
+				margin: 0
+			&_textarea
+				width: 100%
+				// height: $height_200-106
+				height: 200px
+				background: none
+				border-radius: 6px
+				border: 1px solid $contact_us_web_form_color
+				color: $white_color
+				// font-size: $font-size_22-15
+				font-size: 22px
+				resize: none
+				font-family: Montserrat
+				margin: 0
+		&_blue_button      
+			@include button_blue_left
+			height: 60px
+			width: 215px
+			font-size: 18px
+			margin: 0
+
+				
+.footer
+	background-color: $footer_background-color
+	.row
+	&_menu
+		// height: $height_136-50
+		height: 136px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		&_list
+			display: flex
+			justify-content: space-between
+			align-items: center
+			list-style-type: none
+			// font-size: $font-size_18-13
+			font-size: 18px
+			width: 90%
+			height: 20%
+			padding: 0
+			margin: 0
+			&_item_link
+				color: $footer_menu_list_item_link_color
+				text-decoration: none
+				font-weight: bold
+				&:hover
+					color: $blue_color
+					text-decoration: underline
+					font-weight: bold
+	&_copyright
+		// height: $height_136-50
+		height: 136px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-end
+		&_p
+			color: $white_color
+			// font-size: $font-size_16-10_1
+			font-size: 16px
+			height: 20%
+			padding: 0
+			margin: 0
+			display: flex
+			align-items: center

@@ -1,0 +1,84 @@
+@mixin image_features
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center    
+	
+@mixin button_blue_center
+	// height: $height_60-44
+	height: 60px
+	// width: $width_215-146
+	width: 215px
+	display: flex
+	justify-content: center	
+	align-items: center
+	text-decoration: none
+	background: $blue_color	
+	border-radius: 55px
+	// font-size: $font-size_18-13
+	font-size: 18px
+	color: $white_color
+	font-weight: bold
+	border: 1px solid
+	&:hover
+		background: $white_color
+		color: $blue_color    
+
+@mixin button_blue_left
+	// height: $height_60-44
+	height: 60px
+	// width: $width_215-146
+	width: 215px
+	display: flex
+	justify-content: center	
+	align-items: center
+	text-decoration: none
+	background: $blue_color	
+	border-radius: 55px
+	// font-size: $font-size_18-13
+	font-size: 18px
+	color: $white_color
+	font-weight: bold
+	border: 1px solid
+	&:hover
+		background: $white_color
+		color: $blue_color     
+
+@mixin button_white_left            
+	height: $height_60-44
+	width: $width_215-146
+	display: flex
+	justify-content: center	
+	align-items: center
+	text-decoration: none
+	background: $white_color
+	border-radius: 55px
+	font-size: $font-size_18-13
+	color: $blue_color
+	font-weight: bold
+	border: 1px solid
+	&:hover
+		background: $blue_color
+		color: $white_color
+
+@mixin category_box_link
+	height: 100%
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	text-decoration: none
+	color: $white_color
+	// font-size: $font-size_46-21
+	font-size: 46px
+	font-weight: bold	
+
+@mixin contact_us_information_box_list_item
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 54px
+	width: 54px
+	border-radius: 27px
+	list-style-type: none
+					
