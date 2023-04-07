@@ -2,6 +2,7 @@
 
 	.promo
 		.container-fluid
+			// max-width: none
 		&_wrapper
 			height: $height_966-525
 			&_header
@@ -42,7 +43,8 @@
 
 	.our_services
 		.container-fluid
-		&_wrapper	
+		&_wrapper
+			padding-bottom: $height_136-50	
 			&_h2
 				height: $height_200-90
 				&_text
@@ -70,7 +72,6 @@
 				height: $height_250-132
 				width: $width_215-146
 				&_blue
-					// @include button_blue_center
 					height: $height_60-44
 					width: $width_215-146
 					font-size: $font-size_18-13
@@ -83,7 +84,6 @@
 						font-size: $font-size_16-11_1
 						line-height: $line-height_38-20
 					&_button_blue
-						// @include button_blue_left
 						height: $height_60-44
 						width: $width_215-146
 						font-size: $font-size_18-13
@@ -98,7 +98,6 @@
 						font-size: $font-size_16-11_1
 						line-height: $line-height_38-20
 					&_button_white
-						// @include button_white_left
 						height: $height_60-44
 						width: $width_215-146
 						font-size: $font-size_18-13
@@ -109,25 +108,13 @@
 		&_wrapper
 			.row
 			&_img
-				// min-height: $height_830-312
-				// height: $height_800-500
-				// height: $height_642-330
-				// min-height: $height_800-500
-				// width: 50%
 			&_text
-				// min-height: $height_830-312
-				// height: $height_800-500				
-				// height: $height_642-330
-				// min-height: $height_800-500
-				// width: 50%
 				&_box
 					&_h3
 						font-size: $font-size_36-18
 					&_p
 						font-size: $font-size_16-11_1
-						// line-height: $line-height_38-20
-					&_button_blue
-						// @include button_blue_left	
+					&_button_blue	
 						height: $height_60-44
 						width: $width_215-146
 						font-size: $font-size_18-13	
@@ -147,37 +134,37 @@
 					font-size: $font-size_46-21
 
 	.team
-		height: $height_810-670
-		&_h2_box
-			height: $height_250-132
-			&_text
-				font-size: $font-size_72-32
-				span
+		.container-fluid
+			max-height: $height_810-670
+		&_wrapper
+			&_h2_box
+				height: $height_250-132
+				&_text
 					font-size: $font-size_72-32
-		.row
-		&_offset_block
-			height: $height_80-45		
-		&_member
-			height: $height_400-350	
-			&_img
-				&_John_Doe,
-				&_Paul_Kowalsy,
-				&_Emilly_Williams,
-				&_Patricia_Green
-					height: $height_220-190
-			&_text
-				&_h3
-					font-size: $font-size_36-14_1
-			&_text_box
-				font-size: $font-size_16-10_1
-			&_link
-				// @include button_blue_center	
-				height: $height_60-44
-				width: $width_215-146	
-				font-size: $font-size_18-13	
+					span
+						font-size: $font-size_72-32
+			.row
+			&_offset_block
+				height: $height_80-45		
+			&_member
+				height: $height_400-350	
+				&_img
+					&_John_Doe,
+					&_Paul_Kowalsy,
+					&_Emilly_Williams,
+					&_Patricia_Green
+						height: $height_220-190
+				&_text
+					&_h3
+						font-size: $font-size_36-14_1
+				&_text_box
+					font-size: $font-size_16-10_1
+				&_link
+					height: $height_60-44
+					width: $width_215-146	
+					font-size: $font-size_18-13	
 	
 	.contact_us
-		// height: $height_724-384
 		.container-fluid
 			height: $height_724-384
 		&_wrapper				
@@ -211,8 +198,7 @@
 						width: 100%
 						height: $height_200-106
 						font-size: $font-size_22-15
-				&_blue_button      
-					// @include button_blue_left
+				&_blue_button
 					height: $height_60-44
 					width: $width_215-146
 					font-size: $font-size_18-13
@@ -236,8 +222,7 @@
 
 	.strategy
 		.container-fluid
-			min-height: $height_1460-1200
-			// min-height: $height_830-312
+			min-height: $height_1460-1000
 		&_wrapper
 			.row
 			&_img
@@ -280,10 +265,7 @@
 					padding: 0				
 					&_menu		
 						&_list
-							position: fixed
-							flex-direction: column
-							justify-content: space-evenly	
-							align-items: center		
+							position: fixed	
 							top: 0		
 							left: -100%
 							width: 50%
@@ -332,7 +314,6 @@
 
 	.our_services
 		.container-fluid
-			// padding-bottom: 60px
 		&_wrapper	
 			.row	
 			&_box
@@ -361,18 +342,12 @@
 
 	.strategy
 		.container-fluid
-			// min-height: $height_1460-1200
-			// min-height: $height_830-312
 		&_wrapper
 			.row
 			&_img
 				height: 50%
-				// width: 100%
 			&_text	
-				// width: 100%
 				height: 50%
-				&_box
-					// height: 94%
 
 	.category
 		.container-fluid
@@ -388,20 +363,22 @@
 					font-size: $font-size_38-26
 
 	.team
-		height: $height_1100-900
-		&_h2_box
-			width: 100%	
-			&_text
-				text-align: center
-		.row
-		&_member
-			height: $height_350-300
-			&_img
-				&_John_Doe,
-				&_Paul_Kowalsy,
-				&_Emilly_Williams,
-				&_Patricia_Green
-					height: $height_200-140
+		.container-fluid	
+			max-height: $height_1100-900
+		&_wrapper	
+			&_h2_box
+				width: 100%	
+				&_text
+					text-align: center
+			.row
+			&_member
+				height: $height_350-300
+				&_img
+					&_John_Doe,
+					&_Paul_Kowalsy,
+					&_Emilly_Williams,
+					&_Patricia_Green
+						height: $height_200-140
 
 	.contact_us
 		.container-fluid
@@ -437,8 +414,6 @@
 
 	.strategy
 		.container-fluid
-			// min-height: $height_1460-1200
-			// min-height: $height_830-312
 		&_wrapper
 			.row
 			&_img
@@ -451,7 +426,6 @@
 					height: 96%					
 
 	.contact_us
-		// height: $height_1100-600
 		.container-fluid
 			height: $height_1100-600
 		&_wrapper				
@@ -488,9 +462,6 @@
 			.row
 			&_menu
 				&_list
-					justify-content: space-between
-					align-items: center
-					list-style-type: none
 					font-size: $font-size_18-12
 					width: 100%
 					height: 50%
@@ -508,7 +479,6 @@
 			height: $height_800-500
 			&_header
 				.row
-					// margin: 0 -12 0 -12
 					display: block
 				&_hamburger-box-menu
 					&_hamburger
@@ -531,8 +501,8 @@
 			&_call-to-action	
 				.row
 					height: $height_664-364
-					// margin: 0 -12 0 -12
-				&_box	
+				&_box
+					padding: 0
 					&_h1	
 						font-size: $font-size_68-32
 					&_p
@@ -540,17 +510,14 @@
 
 	.our_services
 		.container-fluid
-			// padding-bottom: 60px
 		&_wrapper
-			background-image: url(../img/OUR-SERVICES/BackGr_Srv_1200.png)		
-			padding-bottom: 65px	
+			background-image: url(../img/OUR-SERVICES/BackGr_Srv_1200.png)	
 			&_h2
 				height: $height_150-100
 				&_text
-					font-size: $font-size_48-18			
+					font-size: $font-size_34-18			
 			.row
 			&_box
-				// min-width: 575px
 				&_img
 					height: $height_80-38
 					&_rd,
@@ -578,7 +545,7 @@
 			&_gray_text
 				&_box	
 					&_h3
-						font-size: $font-size_36-20
+						font-size: $font-size_28-16_2
 					&_p
 						font-size: $font-size_16-10_2
 						line-height: $line-height_38-20
@@ -601,7 +568,7 @@
 			&_white_text
 				&_box	
 					&_h3
-						font-size: $font-size_36-20	
+						font-size: $font-size_28-16_2
 					&_p	
 						font-size: $font-size_16-10_2
 						line-height: $line-height_38-20
@@ -612,8 +579,7 @@
 
 	.strategy
 		.container-fluid
-			// min-height: $height_1460-1200
-			// min-height: $height_830-312
+			min-height: $height_1400-1000
 		&_wrapper
 			.row
 			&_img
@@ -623,7 +589,11 @@
 				width: 100%
 				height: 70%
 				&_box
-					height: 100%							
+					height: 100%
+					&_h3
+						font-size: $font-size_28-16_2
+					&_p
+						font-size: $font-size_16-10_2			
 
 	.category
 		.container-fluid
@@ -638,29 +608,31 @@
 					font-size: $font-size_46-26
 	
 	.team
-		height: $height_2260-1600	
-		&_h2_box
-			height: $height_260-180	
-			&_text
-				font-size: $font-size_68-32
-				span
+		.container-fluid
+			max-height: $height_2260-1600	
+		&_wrapper	
+			&_h2_box
+				height: $height_260-180	
+				&_text
 					font-size: $font-size_68-32
-		.row
-		&_offset_block
-			height: $height_80-38				
-		&_member	
-			height: $height_434-300
-			&_img
-				&_John_Doe,
-				&_Paul_Kowalsy,
-				&_Emilly_Williams,
-				&_Patricia_Green
-					height: $height_260-180
-			&_text
-				&_h3	
-					font-size: $font-size_46-26
-			&_text_box	
-				font-size: $font-size_20-16
+					span
+						font-size: $font-size_68-32
+			.row
+			&_offset_block
+				height: $height_80-38				
+			&_member	
+				height: $height_434-300
+				&_img
+					&_John_Doe,
+					&_Paul_Kowalsy,
+					&_Emilly_Williams,
+					&_Patricia_Green
+						height: $height_260-180
+				&_text
+					&_h3	
+						font-size: $font-size_46-26
+				&_text_box	
+					font-size: $font-size_20-16
 
 	.contact_us
 		.container-fluid
