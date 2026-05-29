@@ -1,21 +1,22 @@
-.promo
+.promo	
+	min-height: 100vh	
+	background-image: url(../img/HEADER-PROMO/backgr_header.jpg)
+	@include image_features
 	.container-fluid
 		display: flex
 		justify-content: center	
-		max-width: 2500px
+		max-width: 2500px		
+		min-height: 100%
 		padding: 0
 	&_wrapper
 		display: flex
 		justify-content: center	
-		flex-direction: column
+		flex-direction: column	
 		min-height: 100vh
 		width: 100%
-		background-image: url(../img/HEADER-PROMO/backgr_header.jpg)
-		@include image_features
 		&_header
-			min-height: 136px
-			background: $promo_header_background_color
-			top: 0
+			height: 17%
+			background: $promo_header_background_color			
 			.row
 				min-height: 136px
 				display: flex
@@ -94,18 +95,20 @@
 						opacity: 1          
 		&_call-to-action
 			display: flex		 
-			justify-content: center		
+			justify-content: center	
+			height: 83%
 			.row
-				height: 830px
 				display: flex			
 				justify-content: center	
 				width: 100%
+				margin: 0
 			&_box
 				display: flex
 				flex-direction: column
 				justify-content: center			
 				align-items: center	
 				width: 100%	
+				padding: 0
 				&_h1
 					color: $white_color
 					font-size: 72px
